@@ -1,4 +1,4 @@
-# 모던 프론트엔드 - 모노레포 개념
+# 모던 프론트엔드 - 모노레포 구축해보기
 
 ## Tools
 
@@ -54,3 +54,15 @@ yarn workspace client add common@1.0.0
 ```
 
 <img width="1443" alt="스크린샷 2022-10-23 오후 8 04 36" src="https://user-images.githubusercontent.com/70752848/197388542-840879eb-0d5a-408e-b0f8-df7240579654.png">
+
+### workspace 의존 관계 확인
+
+[yarn workspace info](https://classic.yarnpkg.com/en/docs/cli/workspaces) 명령을 실행해 workspace들의 의존 관계를 파악한다.
+
+> Yarn 2.x 이후에는 [yarn workspaces list](https://yarnpkg.com/cli/workspaces/list)를 사용
+
+```
+yarn workspaces info
+```
+
+<img width="1445" alt="스크린샷 2022-10-23 오후 9 24 49" src="https://user-images.githubusercontent.com/70752848/197391909-627696ff-b186-4a88-a97a-f9b35d5519de.png">
