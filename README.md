@@ -1,0 +1,42 @@
+# 모던 프론트엔드 - 모노레포 개념
+
+## Tools
+
+1. [Yarn](https://yarnpkg.com/)
+2. [Lerna](https://lerna.js.org/)
+3. [Nx](https://nx.dev/)
+4. [Turborepo](https://turborepo.org/)
+
+## 1. Yarn
+
+> https://classic.yarnpkg.com/en/docs/cli/
+
+[yarn link](https://classic.yarnpkg.com/en/docs/cli/link) 기능을 선언적으로 사용해 node_modules 디렉토리에 workspace에 대한 **심볼릭 링크**가 생성된다. 이를 통해 하나의 저장소에 있는 여러 프로젝트가 서로 쉽게 상호 참조 가능하다.
+
+### 용어
+
+- Project
+  - = 저장소
+  - 하나 이상의 worktree 포함
+  - 최소 한개의 workspace(즉, 루트 workspace) 존재
+- workspace
+  - = 모노레포 패키지
+- worktree
+  - 자식 workspace를 갖는 workspace
+
+### worktree 선언
+
+worktree를 구성하는 workspace의 위치를 glob 패턴의 배열로 나타낸다. 예를 들어 packages 폴더 내의 모든 폴더가 workspace가 되도록 다음과 같이 설정한다.
+
+```json
+{
+  "private": true,
+  "workspaces": ["packages/*"]
+}
+```
+
+### workspace 추가
+
+그림과 같이 client, server common 세 개의 workspace를 추가하고 루트 경로에서 yarn 명령을 실행하면 루트 경로에 node_modules 디렉토리에 workspace들에 대한 **심볼릭 링크**가 생성된다.
+
+<img width="1443" alt="스크린샷 2022-10-23 오후 7 48 50" src="https://user-images.githubusercontent.com/70752848/197387931-ed5720a0-d790-4a6e-8443-0eff517f81cd.png">

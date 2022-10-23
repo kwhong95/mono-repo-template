@@ -1,0 +1,11 @@
+{
+  "name": "mono-repo-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kwhong95",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
