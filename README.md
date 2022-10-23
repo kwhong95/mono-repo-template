@@ -40,3 +40,17 @@ worktree를 구성하는 workspace의 위치를 glob 패턴의 배열로 나타�
 그림과 같이 client, server common 세 개의 workspace를 추가하고 루트 경로에서 yarn 명령을 실행하면 루트 경로에 node_modules 디렉토리에 workspace들에 대한 **심볼릭 링크**가 생성된다.
 
 <img width="1443" alt="스크린샷 2022-10-23 오후 7 48 50" src="https://user-images.githubusercontent.com/70752848/197387931-ed5720a0-d790-4a6e-8443-0eff517f81cd.png">
+
+### workspace에 대한 명령 실행
+
+[특정 workspace에 정의된 스크립트를 실행한다.](https://classic.yarnpkg.com/en/docs/cli/workspace)
+
+### workspace를 의존성으로 추가
+
+client 패키지가 common 패키지를 의존하게 하려면 package.json에 의존성을 명시하거나 yarn workspace 명령을 이용한다.
+
+```
+yarn workspace client add common@1.0.0
+```
+
+<img width="1443" alt="스크린샷 2022-10-23 오후 8 04 36" src="https://user-images.githubusercontent.com/70752848/197388542-840879eb-0d5a-408e-b0f8-df7240579654.png">
