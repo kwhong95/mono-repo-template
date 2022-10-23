@@ -66,3 +66,11 @@ yarn workspaces info
 ```
 
 <img width="1445" alt="스크린샷 2022-10-23 오후 9 24 49" src="https://user-images.githubusercontent.com/70752848/197391909-627696ff-b186-4a88-a97a-f9b35d5519de.png">
+
+### 모든 workspace에 대해 명령 실행
+
+yarn workspaces run 를 사용하면 모든 workspace에 대해 명령을 실행할 수 있다. 다음 명령은 모든 workspace들을 순회하며 test 스크립트를 실행한다.
+
+```
+yarn workspaces run test
+```
