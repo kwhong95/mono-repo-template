@@ -1,0 +1,11 @@
+{
+  "name": "yarn-berry",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kwhong95",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
