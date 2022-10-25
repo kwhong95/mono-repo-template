@@ -73,3 +73,52 @@ yarn add lodash --ignore-workspace-root-check
 ```
 
 <img width="321" alt="스크린샷 2022-10-25 오후 8 31 44" src="https://user-images.githubusercontent.com/70752848/197762635-267b7563-7b5a-4f1a-80ee-44bd9114006c.png">
+
+### 모든 workspace에 대해 npm 스크립트 실행
+
+해당 스크립트가 포함된 각 workspace에서 npm 스크립트를 실행한다.
+
+```
+lerna run <COMMAND_NAME> -- [...args]
+```
+
+모든 workspace에 대해 test를 실행한다.
+
+```
+lerna run test
+```
+
+<img width="586" alt="스크린샷 2022-10-25 오후 8 36 29" src="https://user-images.githubusercontent.com/70752848/197763463-b66d8b68-087f-498f-bc39-25160cdfab90.png">
+```
+
+### 모든 workspace에 대해 임의 명령 실행
+
+```
+lerna exec -- <COMMAND> [...args]
+```
+
+eg. 모든 workspace 하위의 node_modules 폴더를 지운다.
+
+```
+lerna exec -- rm -rf ./node_modules
+```
+
+### npm publish
+
+> [공식 문서 참조](https://github.com/lerna/lerna/tree/main/commands/publish#readme)
+
+```
+lerna publish   ## 마지막 릴리스 이후 변경된 패키지 publish
+lerna publish from-git ## 현재 커밋에 태그가 지정된 패키지를 명시적으로 publish
+lerna publish from-package ## 레지스트리에 최신 버전이 없는 패키지를 명시적으로 publish
+```
+
+### 버전 관리 및 CHANGELOG 작성 자동화
+
+workspace에 변경을 가한 뒤 `lerna version`을 실행하면 각 workspace의 package.json 에 명시된 버전을 자동으로 올리고 git tag를 남기고 변경에 대한 CHANGELOG도 작성한다.
+
+> 더 많은 기능은 [lerna-changelog](https://github.com/lerna/lerna-changelog) 를 참고
+
+```
+lerna version
+```

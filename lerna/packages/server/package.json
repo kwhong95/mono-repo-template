@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "kwhong95 <kwhong95@kakao.com>",
+  "homepage": "https://github.com/kwhong95/mono-repo-template#readme",
+  "license": "ISC",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwhong95/mono-repo-template.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/server.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kwhong95/mono-repo-template/issues"
+  }
+}
