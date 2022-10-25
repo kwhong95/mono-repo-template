@@ -63,3 +63,13 @@ lerna add common@0.0.0 --scope=client
 ```
 
 <img width="695" alt="스크린샷 2022-10-25 오후 8 26 41" src="https://user-images.githubusercontent.com/70752848/197760905-3be3cf9d-e052-4d14-9b6c-94ef3386d7c9.png">
+
+### 루트 프로젝트에 의존성 추가
+
+lodash를 루트 프로젝트에 설치한다.
+
+```
+yarn add lodash --ignore-workspace-root-check
+```
+
+<img width="321" alt="스크린샷 2022-10-25 오후 8 31 44" src="https://user-images.githubusercontent.com/70752848/197762635-267b7563-7b5a-4f1a-80ee-44bd9114006c.png">
