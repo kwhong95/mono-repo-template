@@ -122,3 +122,7 @@ workspace에 변경을 가한 뒤 `lerna version`을 실행하면 각 workspace�
 ```
 lerna version
 ```
+
+<img width="480" alt="스크린샷 2022-10-25 오후 8 59 43" src="https://user-images.githubusercontent.com/70752848/197767700-a90a1a38-137d-4c21-9bac-866635b97b0a.png">
+
+<img width="586" alt="스크린샷 2022-10-25 오후 8 58 53" src="https://user-images.githubusercontent.com/70752848/197767521-0d135095-7eee-4e0c-9623-829fbad23a01.png">

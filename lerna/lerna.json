@@ -1,8 +1,31 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "0.1.0",
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "changelogPreset": {
+        "name": "conventional-changelog-conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": ":rocket: New Features",
+            "hidden": false
+          },
+          {
+            "type": "fix",
+            "section": ":bug: Bug Fix",
+            "hidden": false
+          },
+          {
+            "type": "docs",
+            "section": ":memo: Documentation",
+            "hidden": false
+          }
+        ]
+      }
+    }
+  },
   "npmClient": "yarn",
   "useWorkspaces": true
 }
