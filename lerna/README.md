@@ -126,3 +126,23 @@ lerna version
 <img width="480" alt="스크린샷 2022-10-25 오후 8 59 43" src="https://user-images.githubusercontent.com/70752848/197767700-a90a1a38-137d-4c21-9bac-866635b97b0a.png">
 
 <img width="586" alt="스크린샷 2022-10-25 오후 8 58 53" src="https://user-images.githubusercontent.com/70752848/197767521-0d135095-7eee-4e0c-9623-829fbad23a01.png">
+
+### Lerna 명령어
+
+그 외에도 변경 사항을 알아내거나 workspace 목록을 얻거나 lerna, npmClient, OS 등의 환경을 알아내는 등 다양한 기능을 제공한다. Lerna의 자세한 명령어는 다음을 참고한다.
+
+- lerna publish
+- lerna version
+- lerna bootstrap
+- lerna list
+- lerna changed
+- lerna diff
+- lerna exec
+- lerna run
+- lerna init
+- lerna add
+- lerna clean
+- lerna import
+- lerna link
+- lerna create
+- lerna info
