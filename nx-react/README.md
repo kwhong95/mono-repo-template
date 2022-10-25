@@ -42,3 +42,30 @@ nx serve <APP_NAME>
 ```
 
 > 전역에 Nx 설치 : `npm install -g nx 또는 yarn global add nx`
+
+### 라이브러리 추가해보기
+
+애플리케이션 전반에서 사용 가능한 라이브러리를 추가해본다.
+
+**라이브러리 목적과 특성**
+
+- feature 라이브러리
+- UI 라이브러리
+- data-access 라이브러리
+- utility 라이브러리
+
+**eg.Create UI Library**
+
+```
+npx nx g @nrwl/react:lib ui
+```
+
+<img width="277" alt="스크린샷 2022-10-25 오후 9 46 31" src="https://user-images.githubusercontent.com/70752848/197776669-00b58e09-e5e6-4eff-acb3-0089fa1ef3fc.png">
+
+**생성된 UI 라이브러리 구조에 실제 View 역할을 수행할 컴포넌트 추가**
+
+```
+npx nx g component first-lib --project=ui --export
+```
+
+<img width="269" alt="스크린샷 2022-10-25 오후 9 48 52" src="https://user-images.githubusercontent.com/70752848/197777191-bbc91624-5a78-4b6d-a667-81502af98434.png">
