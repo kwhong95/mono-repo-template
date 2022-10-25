@@ -43,3 +43,23 @@ lerna create client
 ```
 
 <img width="1453" alt="스크린샷 2022-10-24 오후 11 31 40" src="https://user-images.githubusercontent.com/70752848/197551354-c5bc4af4-ee17-4e42-96f1-a8a2b6b46f8f.png">
+
+### workspace에 의존성 추가
+
+client workspace에 react 패키지를 설치해보도록 한다. `--scope`없이 사용하면 모든 workspace에 추가한다. 추가하려는 의존성이 workspace라면 해당 workspace를 제외한 모든 workspace에 추가된다.
+
+> 현재 [여러 의존성을 한번에 추가](https://github.com/lerna/lerna/issues/2004)하는 기능은 지원하지 않는다.
+
+client workspace에 react 패키지를 추가한다.
+
+```
+lerna add react --scope=client
+```
+
+client workspace에 common workspace를 추가한다.
+
+```
+lerna add common@0.0.0 --scope=client
+```
+
+<img width="695" alt="스크린샷 2022-10-25 오후 8 26 41" src="https://user-images.githubusercontent.com/70752848/197760905-3be3cf9d-e052-4d14-9b6c-94ef3386d7c9.png">

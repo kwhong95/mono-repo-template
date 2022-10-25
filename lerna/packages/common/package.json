@@ -1,11 +1,11 @@
 {
-  "name": "client",
+  "name": "common",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "kwhong95 <kwhong95@kakao.com>",
   "homepage": "https://github.com/kwhong95/mono-repo-template#readme",
-  "license": "MIT",
-  "main": "lib/client.js",
+  "license": "ISC",
+  "main": "lib/common.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -18,13 +18,9 @@
     "url": "git+https://github.com/kwhong95/mono-repo-template.git"
   },
   "scripts": {
-    "test": "node ./__tests__/client.test.js"
+    "test": "node ./__tests__/common.test.js"
   },
   "bugs": {
     "url": "https://github.com/kwhong95/mono-repo-template/issues"
-  },
-  "dependencies": {
-    "common": "0.0.0",
-    "react": "^18.2.0"
   }
 }
