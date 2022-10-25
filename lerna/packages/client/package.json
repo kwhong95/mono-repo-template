@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "> TODO: description",
   "author": "kwhong95 <kwhong95@kakao.com>",
   "homepage": "https://github.com/kwhong95/mono-repo-template#readme",
@@ -24,7 +24,7 @@
     "url": "https://github.com/kwhong95/mono-repo-template/issues"
   },
   "dependencies": {
-    "common": "0.0.0",
+    "common": "^0.1.0",
     "react": "^18.2.0"
   }
 }
